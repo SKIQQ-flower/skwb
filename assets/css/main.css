@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.container {
+  @apply p-2 bg-[#11111b] border-2 hover:border-[#45475a] border-[#313244];
+}
+
+body {
+  @apply bg-[#11111b] text-[#ffffff];
+}
+
+#__nuxt {
+  @apply flex flex-col items-center justify-center h-dvh w-dvw;
+}
+
+.title {
+  @apply text-2xl font-mono font-bold text-gray-200
+}
+
+.title::before {
+  content: " ";
+}
+
+.title:hover::before {
+  content: "# ";
+}
