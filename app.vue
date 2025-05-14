@@ -46,16 +46,16 @@
 import { useMediaQuery } from '@vueuse/core';
 const isMd = useMediaQuery('(min-width: 768px)');
 
-const isSiteMapOpen = ref(!isMd.value);
-const isSocialsOpen = ref(!isMd.value);
+const isSiteMapOpen = ref(isMd.value);
+const isSocialsOpen = ref(isMd.value);
 
-isMd.valueChanged(() => {
-  if (isMd.value) {
-    isSiteMapOpen.value = false;
-    isSocialsOpen.value = false;
-  } else {
+watch(isMd, (value) => {
+  if (value) {
     isSiteMapOpen.value = true;
     isSocialsOpen.value = true;
+  } else {
+    isSiteMapOpen.value = false;
+    isSocialsOpen.value = false;
   }
 });
 
