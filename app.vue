@@ -43,10 +43,21 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { useMediaQuery } from '@vueuse/core';
+const isMd = useMediaQuery('(min-width: 768px)');
 
-const isSiteMapOpen = ref(true);
-const isSocialsOpen = ref(true);
+const isSiteMapOpen = ref(!isMd.value);
+const isSocialsOpen = ref(!isMd.value);
+
+isMd.valueChanged(() => {
+  if (isMd.value) {
+    isSiteMapOpen.value = false;
+    isSocialsOpen.value = false;
+  } else {
+    isSiteMapOpen.value = true;
+    isSocialsOpen.value = true;
+  }
+});
 
 const toggleSiteMap = () => {
   isSiteMapOpen.value = !isSiteMapOpen.value;
