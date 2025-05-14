@@ -66,11 +66,6 @@ const pages = [
 
 const social = [
   {
-    icon: 'material-symbols:planet',
-    name: 'Source code',
-    link: 'https://github.com/SKWB-gh/skwb.website',
-  },
-  {
     icon: 'mdi:github',
     name: 'GitHub',
     link: 'https://github.com/SKIQQ-flower',
