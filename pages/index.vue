@@ -12,7 +12,7 @@
             <img src="/bodedope_pfp.png" class="size-56">
             <p class="text-xl font-bold font-mono">Bodedope</p>
             <p class="w-56">One of our characters, a lovely goat filled with emotions.</p>
-            <NuxtLink to="/characters/bodedope"
+            <NuxtLink to="/characters"
                 class="border-[#313244] hover:border-[#45475a] mt-2 border-2 flex flex-row items-center">
                 <Icon name="mdi:chevron-right" /> See all characters
             </NuxtLink>
@@ -21,7 +21,7 @@
             <img src="/epnoia_pfp.png" class="size-56">
             <p class="text-xl font-bold font-mono">Epnoia</p>
             <p class="w-56">Our first game, yet in development.</p>
-            <NuxtLink to="/characters/bodedope"
+            <NuxtLink to="/projects"
                 class="border-[#313244] hover:border-[#45475a] mt-2 border-2 px-2 flex flex-row items-center">
                 <Icon name="mdi:chevron-right" /> Check out our projects
             </NuxtLink>
@@ -30,7 +30,7 @@
             <Icon name="material-symbols:newspaper" class="size-56" />
             <p class="text-xl font-bold font-mono">What we are doing?</p>
             <p class="w-56">You can check the blog for updates.</p>
-            <NuxtLink to="/characters/bodedope"
+            <NuxtLink to="/blog"
                 class="border-[#313244] hover:border-[#45475a] mt-2 border-2 px-2 flex flex-row items-center">
                 <Icon name="mdi:chevron-right" /> Visit our blog
             </NuxtLink>
@@ -39,16 +39,7 @@
             <Icon name="maki:museum" class="size-56" />
             <p class="text-xl font-bold font-mono">The SKWB museum</p>
             <p class="w-56">Drawings and Music, a museum that is open 24/7.</p>
-            <NuxtLink to="/characters/bodedope"
-                class="border-[#313244] hover:border-[#45475a] mt-2 border-2 px-2 flex flex-row items-center">
-                <Icon name="mdi:chevron-right" /> Have fun in museum
-            </NuxtLink>
-        </div>
-        <div class="hover:border-[#45475a] border-2 p-2 w-fit flex flex-col border-[#313244]">
-            <Icon name="maki:museum" class="size-56" />
-            <p class="text-xl font-bold font-mono">The SKWB museum</p>
-            <p class="w-56">Drawings and Music, a museum that is open 24/7.</p>
-            <NuxtLink to="/characters/bodedope"
+            <NuxtLink to="/museum"
                 class="border-[#313244] hover:border-[#45475a] mt-2 border-2 px-2 flex flex-row items-center">
                 <Icon name="mdi:chevron-right" /> Have fun in museum
             </NuxtLink>
