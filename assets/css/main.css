@@ -17,9 +17,5 @@ body {
 }
 
 .title::before {
-  content: " ";
-}
-
-.title:hover::before {
-  content: "# ";
+  content: ":: ";
 }
